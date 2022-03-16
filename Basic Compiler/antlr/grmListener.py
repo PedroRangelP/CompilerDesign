@@ -35,15 +35,6 @@ class grmListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by grmParser#assignation.
-    def enterAssignation(self, ctx:grmParser.AssignationContext):
-        pass
-
-    # Exit a parse tree produced by grmParser#assignation.
-    def exitAssignation(self, ctx:grmParser.AssignationContext):
-        pass
-
-
     # Enter a parse tree produced by grmParser#more.
     def enterMore(self, ctx:grmParser.MoreContext):
         pass
@@ -104,6 +95,15 @@ class grmListener(ParseTreeListener):
 
     # Exit a parse tree produced by grmParser#declaration.
     def exitDeclaration(self, ctx:grmParser.DeclarationContext):
+        pass
+
+
+    # Enter a parse tree produced by grmParser#assignation.
+    def enterAssignation(self, ctx:grmParser.AssignationContext):
+        pass
+
+    # Exit a parse tree produced by grmParser#assignation.
+    def exitAssignation(self, ctx:grmParser.AssignationContext):
         pass
 
 

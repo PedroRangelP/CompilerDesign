@@ -24,11 +24,6 @@ class grmVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by grmParser#assignation.
-    def visitAssignation(self, ctx:grmParser.AssignationContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by grmParser#more.
     def visitMore(self, ctx:grmParser.MoreContext):
         return self.visitChildren(ctx)
@@ -61,6 +56,11 @@ class grmVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by grmParser#declaration.
     def visitDeclaration(self, ctx:grmParser.DeclarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by grmParser#assignation.
+    def visitAssignation(self, ctx:grmParser.AssignationContext):
         return self.visitChildren(ctx)
 
 

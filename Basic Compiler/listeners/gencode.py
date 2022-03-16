@@ -30,7 +30,7 @@ class GenCode(grmListener):
     print("sub $t2, $t0, $t1\n")
 
   def exitAssignation(self, ctx:grmParser.AssignationContext):
-    print("Assignation\n")
+    print("sw $t0, " + ctx.Variable().getText() +"\n")
   
   def exitDeclaration(self, ctx:grmParser.DeclarationContext):
     print(".data")
